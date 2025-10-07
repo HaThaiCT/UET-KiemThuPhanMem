@@ -1,22 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
-int tiennuoc(int thang, int khoinuoc) {
+int tiennuoc(int t, int kn) {
     int res;
-    if(thang >= 1 && thang <= 6) {
-        if (khoinuoc <= 10 && khoinuoc >= 0) {
-            res = 36000 * khoinuoc;
-        } else if(khoinuoc > 10) {
-            res = 30000 * khoinuoc;
+    if(t >= 1 && t <= 6) {
+        if (kn <= 10 && kn >= 0) {
+            res = 36000 * kn;
+        } else if(kn > 10) {
+            res = 30000 * kn;
         } else {
             cout << "Dau vao khong hop le!";
             return -1;
         }
     }
-    else if (thang >= 7 && thang <= 12) {
-        if (khoinuoc <= 10 && khoinuoc >= 0) {
-            res = 33000 * khoinuoc;
-        } else if(khoinuoc > 10) {
-            res = 26000 * khoinuoc;
+    else if (t >= 7 && t <= 12) {
+        if (kn <= 10 && kn >= 0) {
+            res = 33000 * kn;
+        } else if(kn > 10) {
+            res = 26000 * kn;
         } 
         else {
             cout << "Dau vao khong hop le!";
